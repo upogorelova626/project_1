@@ -1,0 +1,88 @@
+:host {
+    display: block;
+    padding: 20px 12px;
+    position: relative;
+    background-color: var(--dark-color);
+}
+
+.main-menu-list {
+    display: grid;
+    grid-gap: 8px;
+    list-style: none;
+}
+
+.menu-item {
+    padding: 16px 12px;
+    border: none;
+    cursor: pointer;
+    background: none;
+    color: var(--light-color);
+    display: grid;
+    grid-template-columns: 16px 1fr max-content;
+    grid-gap: 12px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    align-items: center;
+    width: 100%;
+    text-align: left;
+
+    &:hover,
+    &:focus-visible {
+        background-color: var(--dark-hover-color);
+        border-radius: 2px;
+        color: var(--primary-color);
+    }
+
+    .icon {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+.to-subscribers {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.to-subscribers-link {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.to-subscribers-icon {
+    width: 18px;
+    height: 18px;
+}
+
+.sidebar-footer {
+    position: absolute;
+    width: calc(100% - 20px);
+    bottom: 20px;
+    background-color: var(--dark-hover-color);
+    padding: 4px 16px;
+    display: grid;
+    grid-template-columns: 32px 1fr 16px;
+    grid-gap: 12px;
+    align-items: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.avatar-img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.username-text {
+    color: var(--primary-color);
+}
+
+.svg-settings {
+    width: 13px;
+    height: 13px;
+    color: var(--primary-color);
+}

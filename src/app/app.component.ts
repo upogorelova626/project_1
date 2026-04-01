@@ -7,7 +7,6 @@ import {Profile} from './data/interfaces/profile.interface';
 
 @Component({
     selector: 'app-root',
-    standalone: true,
     imports: [CommonModule, RouterOutlet],
     templateUrl: './app.component.html',
     styleUrl: './app.component.less'
